@@ -32,13 +32,11 @@ export default function Header() {
                 <nav className={styles.nav}>
                     <Link href="/" className={styles.logo}>
                         <div className={styles.logoContainer}>
-                            <Image
+                            <img
                                 src={`${prefix}/images/logo-v2.png`}
                                 alt="Orianne Décoratrice"
-                                fill
-                                sizes="(max-width: 768px) 100px, 150px"
                                 className={styles.logoImage}
-                                priority
+                                style={{ width: '100%', height: '100%', objectFit: 'contain', objectPosition: 'left center' }}
                             />
                         </div>
                     </Link>

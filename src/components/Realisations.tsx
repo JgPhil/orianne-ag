@@ -55,12 +55,11 @@ export default function Realisations() {
                     {projects.map((project) => (
                         <div key={project.id} className={styles.item}>
                             <div className={styles.imageContainer}>
-                                <Image
+                                <img
                                     src={project.image}
                                     alt={project.alt}
-                                    fill
                                     className={styles.image}
-                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                                 />
                             </div>
                             <div className={styles.overlay}>

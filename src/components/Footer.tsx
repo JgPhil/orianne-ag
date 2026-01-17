@@ -33,7 +33,7 @@ export default function Footer() {
                     <div className={styles.footerSection}>
                         <h4 className={styles.footerSubtitle}>Plan du site</h4>
                         <ul className={styles.footerLinks}>
-                            <li><Link href="/">Accueil</Link></li>
+                            <li><Link href="/#accueil">Accueil</Link></li>
                             <li><Link href="/#services">Prestations</Link></li>
                             <li><Link href="/realisations">Galerie & Univers</Link></li>
                             <li><Link href="/#contact">Contact & Devis</Link></li>

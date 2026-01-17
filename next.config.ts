@@ -2,16 +2,16 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactCompiler: true,
-  output: 'standalone',
+  output: 'export',
+  basePath: '/orianne-ag',
   images: {
-    formats: ['image/avif', 'image/webp'],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    unoptimized: true,
   },
   // Optimisations pour Cloudflare Pages
-  compress: true,
-  poweredByHeader: false,
-  generateEtags: true,
+  // Note: compress et properties below might not apply to static export the same way but keeping them doesn't hurt usually, except output: standalone which conflicts with export.
+  // compress: true, 
+  // poweredByHeader: false,
+  // generateEtags: true,
 };
 
 export default nextConfig;

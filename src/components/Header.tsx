@@ -19,10 +19,10 @@ export default function Header() {
     }, []);
 
     const navItems = [
-        { href: '#accueil', label: 'Accueil' },
-        { href: '#services', label: 'Services' },
-        { href: '#realisations', label: 'Réalisations' },
-        { href: '#contact', label: 'Contact' },
+        { href: '/', label: 'Accueil' },
+        { href: '/#services', label: 'Services' },
+        { href: '/realisations', label: 'Réalisations' },
+        { href: '/#contact', label: 'Contact' },
     ];
 
     return (

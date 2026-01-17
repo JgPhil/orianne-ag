@@ -25,7 +25,7 @@ export default function Hero() {
                         <a href="#contact" className="btn btn-primary btn-large">
                             Me contacter
                         </a>
-                        <a href="#realisations" className="btn btn-secondary btn-large">
+                        <a href="/realisations" className="btn btn-secondary btn-large">
                             Découvrir mon univers
                         </a>
                     </div>

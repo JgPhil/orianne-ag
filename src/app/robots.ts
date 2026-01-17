@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: '/api/',
         },
-        sitemap: 'https://votre-site.fr/sitemap.xml',
+        sitemap: 'https://oriannedecoratrice.com/sitemap.xml',
     };
 }

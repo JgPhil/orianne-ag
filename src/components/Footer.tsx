@@ -58,7 +58,7 @@ export default function Footer() {
                                 <a href="tel:+33683659718">+33 6 83 65 97 18</a>
                             </li>
                             <li>
-                                <a href="mailto:contact@votre-entreprise.fr">contact@votre-entreprise.fr</a>
+                                <a href="mailto:oriannedecoratrice@gmail.com">oriannedecoratrice@gmail.com</a>
                             </li>
                             <li style={{ fontSize: '0.85rem', opacity: 0.8, marginTop: '0.5rem' }}>
                                 Intervention : Alsace & Lorraine<br />
@@ -69,7 +69,7 @@ export default function Footer() {
                 </div>
 
                 <div className={styles.footerBottom}>
-                    <p>&copy; {currentYear} Votre Entreprise. Tous droits réservés.</p>
+                    <p>&copy; {currentYear} Orianne Décoratrice. Tous droits réservés.</p>
                     <div className={styles.footerLegal}>
                         <Link href="/mentions-legales">Mentions légales</Link>
                         <Link href="/politique-confidentialite">Politique de confidentialité</Link>

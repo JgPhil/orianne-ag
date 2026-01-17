@@ -90,7 +90,7 @@ export default function Contact() {
                                 <div className={styles.contactIcon}>📞</div>
                                 <div>
                                     <strong>Téléphone</strong>
-                                    <a href="tel:+33683659718">+33 6 XX XX XX XX</a>
+                                    <a href="tel:+33683659718">+33 6 83 65 97 18</a>
                                 </div>
                             </div>
 
@@ -98,7 +98,7 @@ export default function Contact() {
                                 <div className={styles.contactIcon}>✉️</div>
                                 <div>
                                     <strong>Email</strong>
-                                    <a href="mailto:contact@votre-entreprise.fr">contact@votre-entreprise.fr</a>
+                                    <a href="mailto:oriannedecoratrice@gmail.com">oriannedecoratrice@gmail.com</a>
                                 </div>
                             </div>
 
@@ -162,7 +162,7 @@ export default function Contact() {
                                     value={formData.phone}
                                     onChange={handleChange}
                                     required
-                                    placeholder="06 XX XX XX XX"
+                                    placeholder="06 83 65 97 18"
                                 />
                             </div>
                         </div>

@@ -1,10 +1,10 @@
 import { Metadata } from 'next';
 
 export const BUSINESS_INFO = {
-    name: 'Votre Entreprise de Décoration',
+    name: 'Orianne Décoratrice',
     description: 'Décoration événementielle et mariages en Alsace et Lorraine. Créations florales sur mesure, mise en scène de cérémonies et réceptions.',
-    phone: '+33 6 XX XX XX XX',
-    email: 'contact@votre-entreprise.fr',
+    phone: '+33 6 83 65 97 18',
+    email: 'oriannedecoratrice@gmail.com',
     address: {
         street: 'Votre adresse',
         city: 'Votre ville',
@@ -40,7 +40,7 @@ export const BUSINESS_INFO = {
 export const generateLocalBusinessSchema = () => ({
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    '@id': 'https://votre-site.fr',
+    '@id': 'https://oriannedecoratrice.com',
     name: BUSINESS_INFO.name,
     description: BUSINESS_INFO.description,
     telephone: BUSINESS_INFO.phone,
@@ -59,18 +59,23 @@ export const generateLocalBusinessSchema = () => ({
     })),
     priceRange: '$$',
     openingHours: 'Mo-Fr 09:00-18:00',
-    url: 'https://votre-site.fr',
+    url: 'https://oriannedecoratrice.com',
     sameAs: [
         // Ajoutez vos réseaux sociaux ici
     ],
 });
 
 export const defaultMetadata: Metadata = {
-    metadataBase: new URL('https://votre-site.fr'),
+    metadataBase: new URL('https://oriannedecoratrice.com'),
     title: {
         default: `${BUSINESS_INFO.name} | Décoration Mariage Alsace Lorraine`,
         template: `%s | ${BUSINESS_INFO.name}`,
     },
+    // ... (omitting unchanged lines for brevity in viewing, but replacement should be targeted)
+    // Wait, REPLACE ALL is better done with multiple chunks as they are scattered.
+    // Let's do a multi_replace for accuracy or just target specific lines.
+
+    // Correct approach: Update URL in chunks.
     description: BUSINESS_INFO.description,
     keywords: [
         'décoration mariage Alsace',
@@ -97,7 +102,7 @@ export const defaultMetadata: Metadata = {
     openGraph: {
         type: 'website',
         locale: 'fr_FR',
-        url: 'https://votre-site.fr',
+        url: 'https://oriannedecoratrice.com',
         siteName: BUSINESS_INFO.name,
         title: `${BUSINESS_INFO.name} | Décoration Mariage Alsace Lorraine`,
         description: BUSINESS_INFO.description,

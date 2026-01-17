@@ -1,5 +1,4 @@
-'use client';
-
+import Link from 'next/link';
 import styles from './Hero.module.css';
 
 export default function Hero() {
@@ -22,12 +21,12 @@ export default function Hero() {
                     </p>
 
                     <div className={`${styles.heroButtons} animate-fade-in-up`}>
-                        <a href="#contact" className="btn btn-primary btn-large">
+                        <Link href="/#contact" className="btn btn-primary btn-large">
                             Me contacter
-                        </a>
-                        <a href="/realisations" className="btn btn-secondary btn-large">
+                        </Link>
+                        <Link href="/realisations" className="btn btn-secondary btn-large">
                             Découvrir mon univers
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

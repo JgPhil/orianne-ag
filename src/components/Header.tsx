@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Header.module.css';
+import { prefix } from '@/lib/utils';
 
 export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -32,7 +33,7 @@ export default function Header() {
                     <Link href="/" className={styles.logo}>
                         <div className={styles.logoContainer}>
                             <Image
-                                src="/images/logo-v2.png"
+                                src={`${prefix}/images/logo-v2.png`}
                                 alt="Orianne Décoratrice"
                                 fill
                                 sizes="(max-width: 768px) 100px, 150px"

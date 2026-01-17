@@ -3,26 +3,28 @@
 import Image from 'next/image';
 import styles from './Realisations.module.css';
 
+import { prefix } from '@/lib/utils';
+
 const projects = [
     {
         id: 1,
         title: 'Château de Pourtalès',
         category: 'Mariage Romantique',
-        image: '/images/realisation-1.png',
+        image: `${prefix}/images/realisation-1.png`,
         alt: 'Décoration de table mariage chateau'
     },
     {
         id: 2,
         title: 'Jardin des Deux Rives',
         category: 'Cérémonie Laïque',
-        image: '/images/realisation-2.png',
+        image: `${prefix}/images/realisation-2.png`,
         alt: 'Arche florale cérémonie laïque'
     },
     {
         id: 3,
         title: 'Abbaye des Prémontrés',
         category: 'Dîner de Gala',
-        image: '/images/realisation-3.png',
+        image: `${prefix}/images/realisation-3.png`,
         alt: 'Détails décoration bougies'
     }
 ];

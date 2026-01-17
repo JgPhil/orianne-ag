@@ -16,7 +16,7 @@
     bottom: 0;
     /* Fond clair et floral */
     background: #fdf5e6;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.6)), url('/images/hero_background.png');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.6)), url('/orianne-ag/images/hero_background.png');
     background-size: cover;
     background-position: center;
 }

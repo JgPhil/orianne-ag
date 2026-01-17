@@ -1,0 +1,109 @@
+.servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-3xl);
+}
+
+.serviceCard {
+    animation: fadeInUp var(--transition-slow) ease-out;
+    animation-fill-mode: both;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.serviceCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-primary);
+    transform: scaleX(0);
+    transition: transform var(--transition-base);
+}
+
+.serviceCard:hover::before {
+    transform: scaleX(1);
+}
+
+.serviceIcon {
+    font-size: 4rem;
+    margin-bottom: var(--spacing-md);
+    display: inline-block;
+    transition: transform var(--transition-base);
+    color: var(--color-primary);
+}
+
+.serviceCard:hover .serviceIcon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.serviceTitle {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-neutral-900);
+}
+
+.serviceDescription {
+    color: var(--color-neutral-600);
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.7;
+}
+
+.serviceFeatures {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.serviceFeature {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: var(--color-neutral-700);
+    font-size: var(--text-sm);
+}
+
+.checkIcon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background: var(--gradient-primary);
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.servicesFooter {
+    text-align: center;
+    padding: var(--spacing-2xl);
+    background: var(--color-neutral-100);
+    border-radius: var(--radius-2xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    align-items: center;
+}
+
+.servicesNote {
+    max-width: 600px;
+    font-size: var(--text-lg);
+    color: var(--color-neutral-700);
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .servicesGrid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,81 @@
+.realisations {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-neutral-50);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.item {
+    position: relative;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    background: white;
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-slow);
+    aspect-ratio: 4/5;
+    /* Format portrait élégant */
+    cursor: pointer;
+}
+
+.item:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image {
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.item:hover .image {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+    opacity: 0;
+    transition: opacity var(--transition-base);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: var(--spacing-lg);
+}
+
+.item:hover .overlay {
+    opacity: 1;
+}
+
+.title {
+    color: white;
+    font-size: var(--text-xl);
+    margin-bottom: var(--spacing-xs);
+    transform: translateY(20px);
+    transition: transform var(--transition-base);
+}
+
+.tag {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: var(--text-sm);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transform: translateY(20px);
+    transition: transform var(--transition-base) 0.1s;
+}
+
+.item:hover .title,
+.item:hover .tag {
+    transform: translateY(0);
+}

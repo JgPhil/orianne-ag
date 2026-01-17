@@ -17,12 +17,6 @@ const services = [
         features: ['Soirées de Gala', 'Arbres de Noël', 'Décors de Vitrine', 'Anniversaires Prestiges'],
     },
     {
-        icon: <Armchair size={64} strokeWidth={1} />,
-        title: 'Location & Mise en Scène',
-        description: 'Service de location de matériel décoratif haut de gamme et installation soignée par nos équipes en Alsace et Lorraine.',
-        features: ['Housses de chaises', 'Guirlandes guinguette', 'Vases & Chandeliers', 'Installation/Désinstallation'],
-    },
-    {
         icon: <Palette size={64} strokeWidth={1} />,
         title: 'Architecture & Design Intérieur',
         description: 'Passionnée par le design, je vous conseille dans l\'aménagement de vos espaces privés. Harmonie des couleurs, choix du mobilier et tendances actuelles.',
@@ -59,16 +53,6 @@ export default function Services() {
                             </ul>
                         </div>
                     ))}
-                </div>
-
-                <div className={styles.servicesFooter}>
-                    <p className={styles.servicesNote}>
-                        Chaque projet est unique. Nous créons des décors sur mesure adaptés à vos envies,
-                        votre budget et votre thème.
-                    </p>
-                    <a href="#contact" className="btn btn-primary btn-large">
-                        Discutons de votre projet
-                    </a>
                 </div>
             </div>
         </section>

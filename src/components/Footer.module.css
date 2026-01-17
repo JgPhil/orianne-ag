@@ -1,15 +1,17 @@
 .footer {
     background: var(--color-primary-dark);
     color: var(--color-neutral-200);
-    padding: var(--spacing-3xl) 0 var(--spacing-lg);
+    padding: var(--spacing-xl) 0 var(--spacing-lg);
 }
 
 .footerContent {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1.5fr;
-    gap: var(--spacing-3xl);
-    margin-bottom: var(--spacing-3xl);
-    padding-bottom: var(--spacing-3xl);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: var(--spacing-2xl);
+    margin-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
     border-bottom: 1px solid var(--color-neutral-700);
 }
 

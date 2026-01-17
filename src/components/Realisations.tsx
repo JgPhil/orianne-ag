@@ -10,21 +10,21 @@ const projects = [
         id: 1,
         title: 'Château de Pourtalès',
         category: 'Mariage Romantique',
-        image: `${prefix}/images/realisation-1.png`,
+        image: '/images/realisation-1.png',
         alt: 'Décoration de table mariage chateau'
     },
     {
         id: 2,
         title: 'Jardin des Deux Rives',
         category: 'Cérémonie Laïque',
-        image: `${prefix}/images/realisation-2.png`,
+        image: '/images/realisation-2.png',
         alt: 'Arche florale cérémonie laïque'
     },
     {
         id: 3,
         title: 'Abbaye des Prémontrés',
         category: 'Dîner de Gala',
-        image: `${prefix}/images/realisation-3.png`,
+        image: '/images/realisation-3.png',
         alt: 'Détails décoration bougies'
     }
 ];
@@ -55,11 +55,12 @@ export default function Realisations() {
                     {projects.map((project) => (
                         <div key={project.id} className={styles.item}>
                             <div className={styles.imageContainer}>
-                                <img
+                                <Image
                                     src={project.image}
                                     alt={project.alt}
+                                    fill
                                     className={styles.image}
-                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 />
                             </div>
                             <div className={styles.overlay}>

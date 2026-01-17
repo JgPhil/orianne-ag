@@ -2,19 +2,20 @@
 
 :root {
   /* Palette "Luxe Lumineux" (Chic & Chaleureux) */
-  --color-primary: hsl(25, 40%, 45%);
-  /* Terracotta chaleureux */
-  --color-primary-light: hsl(25, 30%, 55%);
-  /* Terre cuite claire */
-  --color-primary-dark: hsl(25, 45%, 25%);
-  /* Chocolat chaud */
+  /* Palette "Luxe Doux & Chaleureux" */
+  --color-primary: hsl(28, 45%, 55%);
+  /* Terracotta doux */
+  --color-primary-light: hsl(32, 50%, 88%);
+  /* Beige rosé lumineux */
+  --color-primary-dark: hsl(25, 30%, 35%);
+  /* Brun chaud élégant */
 
-  --color-secondary: hsl(35, 60%, 80%);
-  /* Champagne doré */
-  --color-secondary-light: hsl(35, 70%, 90%);
-  /* Or pâle */
-  --color-secondary-dark: hsl(35, 50%, 60%);
-  /* Vieil or */
+  --color-secondary: hsl(38, 40%, 75%);
+  /* Or végétal */
+  --color-secondary-light: hsl(40, 50%, 92%);
+  /* Crème vanille */
+  --color-secondary-dark: hsl(35, 30%, 50%);
+  /* Bronze doux */
 
   --color-accent: hsl(350, 25%, 90%);
   /* Touche de rose poudré très pâle (subtil) */

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import styles from './Contact.module.css';
 
 export default function Contact() {
@@ -20,21 +21,46 @@ export default function Contact() {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsSubmitting(true);
+        setSubmitStatus('idle');
 
-        // Simulation d'envoi (à remplacer par votre API)
-        setTimeout(() => {
+        try {
+            // Ces valeurs devront être remplacées par vos propres clés EmailJS
+            // Idéalement via des variables d'environnement : process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID
+            const result = await emailjs.send(
+                process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || 'votre_service_id',
+                process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || 'votre_template_id',
+                {
+                    name: formData.name,
+                    email: formData.email,
+                    phone: formData.phone,
+                    event_type: formData.eventType,
+                    event_date: formData.eventDate,
+                    location: formData.location,
+                    message: formData.message,
+                },
+                process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || 'votre_public_key'
+            );
+
+            if (result.status === 200) {
+                setSubmitStatus('success');
+                setFormData({
+                    name: '',
+                    email: '',
+                    phone: '',
+                    eventType: '',
+                    eventDate: '',
+                    location: '',
+                    message: '',
+                });
+            } else {
+                setSubmitStatus('error');
+            }
+        } catch (error) {
+            console.error('Erreur EmailJS:', error);
+            setSubmitStatus('error');
+        } finally {
             setIsSubmitting(false);
-            setSubmitStatus('success');
-            setFormData({
-                name: '',
-                email: '',
-                phone: '',
-                eventType: '',
-                eventDate: '',
-                location: '',
-                message: '',
-            });
-        }, 1500);
+        }
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {

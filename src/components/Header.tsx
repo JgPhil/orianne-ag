@@ -33,7 +33,7 @@ export default function Header() {
                     <Link href="/" className={styles.logo}>
                         <div className={styles.logoContainer}>
                             <Image
-                                src="/images/logo-v3.png"
+                                src={`${prefix}/images/logo-v3.png`}
                                 alt="Orianne Décoratrice"
                                 fill
                                 sizes="(max-width: 768px) 100px, 150px"

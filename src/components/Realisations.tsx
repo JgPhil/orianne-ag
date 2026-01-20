@@ -10,42 +10,42 @@ const projects = [
         id: 1,
         title: 'Château de Pourtalès',
         category: 'Mariage Romantique',
-        image: '/images/realisation-1-new.jpg',
+        image: `${prefix}/images/realisation-1-new.jpg`,
         alt: 'Décoration de table mariage chateau'
     },
     {
         id: 2,
         title: 'Jardin des Deux Rives',
         category: 'Cérémonie Laïque',
-        image: '/images/realisation-2-new.jpg',
+        image: `${prefix}/images/realisation-2-new.jpg`,
         alt: 'Arche florale cérémonie laïque'
     },
     {
         id: 3,
         title: 'Abbaye des Prémontrés',
         category: 'Dîner de Gala',
-        image: '/images/realisation-3-new.jpg',
+        image: `${prefix}/images/realisation-3-new.jpg`,
         alt: 'Détails décoration bougies'
     },
     {
         id: 4,
         title: 'Salle de Réception',
         category: 'Décoration de Salle',
-        image: '/images/realisation-4-new.jpg',
+        image: `${prefix}/images/realisation-4-new.jpg`,
         alt: 'Décoration complète de salle'
     },
     {
         id: 5,
         title: 'Détails Floraux',
         category: 'Fleurs & Ambiances',
-        image: '/images/realisation-5-new.jpg',
+        image: `${prefix}/images/realisation-5-new.jpg`,
         alt: 'Bouquet et centres de table'
     },
     {
         id: 6,
         title: 'Mise en Scène',
         category: 'Scénographie',
-        image: '/images/realisation-6-new.jpg',
+        image: `${prefix}/images/realisation-6-new.jpg`,
         alt: 'Scénographie événementielle'
     }
 ];

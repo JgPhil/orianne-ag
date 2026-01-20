@@ -74,7 +74,7 @@ export default function Contact() {
         <section id="contact" className="section">
             <div className="container">
                 <h2 className="section-title">
-                    Contactez-<span className="gradient-text">nous</span>
+                    Contactez-nous
                 </h2>
 
                 <div className={styles.contactWrapper}>

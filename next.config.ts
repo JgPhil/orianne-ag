@@ -3,6 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   reactCompiler: true,
   output: 'export',
+  basePath: process.env.NODE_ENV === 'production' ? '/orianne-ag' : '',
   images: {
     unoptimized: true,
     formats: ['image/avif', 'image/webp'],

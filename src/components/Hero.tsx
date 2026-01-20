@@ -1,10 +1,16 @@
 import Link from 'next/link';
 import styles from './Hero.module.css';
+import { prefix } from '@/lib/utils';
 
 export default function Hero() {
     return (
         <section id="accueil" className={styles.hero}>
-            <div className={styles.heroBackground}>
+            <div
+                className={styles.heroBackground}
+                style={{
+                    backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.6)), url('${prefix}/images/hero_background_new.jpg')`
+                }}
+            >
                 {/* Idéalement une image sombre de haute qualité ici */}
                 <div className={styles.heroOverlay}></div>
             </div>

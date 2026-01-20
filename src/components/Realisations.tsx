@@ -55,7 +55,7 @@ export default function Realisations() {
         <section id="realisations" className={`section ${styles.realisations}`}>
             <div className="container">
                 <h2 className="section-title">
-                    Nos Dernières <span className="gradient-text" style={{ background: 'var(--color-primary-dark)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Réalisations</span>
+                    Nos Dernières Réalisations
                 </h2>
                 {/* Note: J'ai forcé le gradient-text à être primary-dark uni ici pour éviter le problème "2 couleurs", 
                     ou je devrais juste retirer le span. Je vais retirer le span gradient dans une prochaine étape proprement.

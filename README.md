@@ -1,4 +1,4 @@
-# Site Vitrine - Décoration Événementielle
+# Site Vitrine - Orianne décoratrice
 
 Site vitrine Next.js optimisé pour le référencement local en Alsace, Moselle et Lorraine.
 

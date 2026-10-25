@@ -271,143 +271,139 @@ ul {
 }
 
 /* ==========================================================================
-   HERO SECTION (ACCUEIL)
+   ORIGINAL HERO & VIDEO JUMBOTRON (COMME SUR LE SITE ACTUEL)
    ========================================================================== */
-.hero {
-  position: relative;
-  padding: 64px 0 72px;
-  background: radial-gradient(circle at 85% 15%, rgba(255, 233, 217, 0.7) 0%, rgba(255, 252, 249, 0) 55%),
-              linear-gradient(180deg, var(--color-ivory) 0%, var(--color-cream) 100%);
-  overflow: hidden;
+.hero-original {
+  background: var(--color-white);
+  padding: 28px 0 32px;
 }
 
-.hero-grid {
+.hero-original-inner {
   display: grid;
-  grid-template-columns: 1.08fr 0.92fr;
-  gap: 56px;
+  grid-template-columns: 220px 1fr;
   align-items: center;
+  gap: 32px;
 }
 
-.hero-content h1 {
-  font-family: var(--font-display);
-  font-size: clamp(2.5rem, 4.4vw, 3.85rem);
-  font-weight: 600;
-  line-height: 1.12;
-  color: var(--color-text);
-  margin-bottom: 22px;
-}
-
-.hero-content h1 span {
-  color: var(--color-terracotta);
-  font-style: italic;
-  font-weight: 500;
-}
-
-.hero-lead {
-  font-size: 1.12rem;
-  color: var(--color-text-muted);
-  margin-bottom: 20px;
-  max-width: 580px;
-}
-
-.hero-badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 32px;
-}
-
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.9rem;
-  color: var(--color-text);
-  background: var(--color-white);
-  border: 1px solid var(--color-border);
-  padding: 7px 14px;
-  border-radius: var(--radius-pill);
-  box-shadow: 0 2px 8px rgba(44, 34, 30, 0.03);
-}
-
-.hero-badge svg {
-  color: var(--color-sage);
-  flex-shrink: 0;
-}
-
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-
-.hero-visual {
-  position: relative;
+.hero-original-logo {
   display: flex;
   justify-content: center;
 }
 
-.hero-logo-card {
-  position: relative;
-  background: var(--color-white);
-  border-radius: var(--radius-lg);
-  padding: 28px;
-  box-shadow: var(--shadow-soft);
-  border: 1px solid var(--color-border);
-  width: 100%;
-  max-width: 480px;
-}
-
-.hero-video-wrapper {
-  position: relative;
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  aspect-ratio: 4 / 4.4;
-  background: var(--color-blush);
-}
-
-.hero-video-wrapper video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.hero-floating-logo {
-  position: absolute;
-  bottom: -24px;
-  left: -24px;
-  width: 130px;
-  height: 130px;
-  background: var(--color-white);
-  border-radius: 50%;
-  padding: 12px;
-  box-shadow: var(--shadow-hover);
-  border: 1px solid var(--color-border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-floating-logo img {
-  width: 100%;
-  height: 100%;
+.hero-original-logo img {
+  width: 219px;
+  height: auto;
   object-fit: contain;
 }
 
+.hero-original-center {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.hero-original-center h1 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: clamp(1.9rem, 3.3vw, 2.65rem);
+  line-height: 1.3;
+  color: rgb(194, 134, 104);
+  margin: 0;
+}
+
+.hero-original-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 36px;
+}
+
+.btn-hero-contact {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: rgb(216, 203, 140);
+  border: 1px solid #ffffff;
+  border-radius: 28px;
+  padding: 6px 36px;
+  min-width: 145px;
+  transition: all var(--transition);
+}
+
+.btn-hero-contact:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(216, 203, 140, 0.45);
+}
+
+.btn-hero-decouvrir {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: rgb(194, 134, 104);
+  border: none;
+  border-radius: 28px;
+  padding: 6px 36px;
+  min-width: 145px;
+  transition: all var(--transition);
+}
+
+.btn-hero-decouvrir:hover {
+  background-color: var(--color-terracotta-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(194, 134, 104, 0.45);
+}
+
+/* Video Jumbotron */
+.video-jumbotron {
+  background-color: rgb(255, 233, 217);
+  padding: 16px 0;
+}
+
+.video-jumbotron-inner {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.video-jumbotron-frame {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-jumbotron-frame video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
 /* ==========================================================================
-   SLIDESHOW / CAROUSEL BANNER
+   SLIDESHOW / CAROUSEL JUMBOTRON
    ========================================================================== */
 .showcase-section {
-  padding: 56px 0;
-  background-color: var(--color-cream);
+  padding: 40px 0 0;
+  background-color: var(--color-white);
 }
 
 .carousel {
   position: relative;
-  border-radius: var(--radius-lg);
+  width: 100%;
+  height: 700px;
   overflow: hidden;
-  box-shadow: var(--shadow-soft);
-  aspect-ratio: 16 / 8.2;
   background: #1d1816;
 }
 
@@ -1142,13 +1138,17 @@ textarea.form-control {
    RESPONSIVE DESIGN
    ========================================================================== */
 @media (max-width: 960px) {
-  .hero-grid,
+  .hero-original-inner,
   .about-grid,
   .feature-split,
   .page-hero-grid,
   .contact-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 32px;
+  }
+
+  .video-jumbotron-frame {
+    height: 480px;
   }
 
   .portfolio-grid {

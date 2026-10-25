@@ -19,15 +19,15 @@
   <meta name="twitter:description" content="Décoration Mariage en Alsace et Lorraine : Orianne, experte depuis 15 ans, crée votre décor floral sur mesure. Location et mise en scène d'un événement unique.">
   <meta name="twitter:image" content="https://oriannedecoratrice.com/assets/images/og-image.png">
 
-  <link rel="icon" type="image/png" href="assets/images/logo.png">
-  <link rel="apple-touch-icon" href="assets/images/logo.png">
+  <link rel="icon" type="image/png" href="/assets/images/logo.png">
+  <link rel="apple-touch-icon" href="/assets/images/logo.png">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Dosis:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
 
   <!-- Données structurées SEO LocalBusiness -->
   <script type="application/ld+json">
@@ -40,6 +40,13 @@
     "telephone": "+33683659718",
     "email": "oriannedecoratrice@gmail.com",
     "image": "https://oriannedecoratrice.com/assets/images/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "15 rue du Docteur Schweitzer",
+      "postalCode": "67320",
+      "addressLocality": "Drulingen",
+      "addressCountry": "FR"
+    },
     "areaServed": ["Alsace", "Lorraine", "Strasbourg", "Nancy", "Metz", "Colmar", "Bas-Rhin", "Moselle"],
     "sameAs": [
       "https://www.instagram.com/oriannedecoratrice/?hl=fr"
@@ -53,7 +60,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a href="/" class="brand-logo" aria-label="Orianne Décoratrice — Accueil">
-        <img src="assets/images/logo.png" alt="Logo Orianne décoratrice">
+        <img src="/assets/images/logo.png" alt="Logo Orianne décoratrice">
         <div class="brand-text">
           <span class="brand-name">Orianne</span>
           <span class="brand-tagline">Décoratrice</span>
@@ -72,7 +79,6 @@
         <ul class="nav-links">
           <li><a href="/" class="nav-link active">Accueil</a></li>
           <li><a href="/decoration-de-mariage" class="nav-link">Mariages</a></li>
-          <li><a href="#savoir-faire" class="nav-link">Savoir-faire</a></li>
           <li><a href="#realisations" class="nav-link">Réalisations</a></li>
         </ul>
         <a href="#contact" class="btn btn-primary btn-sm">Contact</a>
@@ -81,126 +87,101 @@
   </header>
 
   <main>
-    <!-- Section Hero -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <span class="eyebrow">Alsace &amp; Lorraine • Depuis 2009</span>
-          <h1>Création de décors <span>événementiels personnalisés</span></h1>
-          <p class="hero-lead">
-            Orianne, décoratrice diplômée en Arts Appliqués et artisan décorateur depuis 2009, est spécialisée dans la décoration de mariages en Alsace et en Lorraine.
-          </p>
-          <p class="hero-lead">
-            J’imagine et mets en scène vos cérémonies et réceptions à Strasbourg, Nancy, Metz, Colmar et alentours : ambiance, couleurs, fleurs, tables et détails décoratifs pour un mariage élégant et personnalisé.
-          </p>
-
-          <div class="hero-badges">
-            <span class="hero-badge">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              Création florale sur mesure
-            </span>
-            <span class="hero-badge">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              Voilages, drapés &amp; lumières
-            </span>
-            <span class="hero-badge">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              Installation clé en main
-            </span>
-          </div>
-
-          <div class="hero-actions">
-            <a href="/decoration-de-mariage" class="btn btn-primary">Découvrir les mariages</a>
-            <a href="#contact" class="btn btn-outline">Demander un devis</a>
-          </div>
+    <!-- En-tête d'accueil avec Logo & Titre (comme sur le site d'origine) -->
+    <section class="hero-original">
+      <div class="container hero-original-inner">
+        <div class="hero-original-logo">
+          <img src="/assets/images/logo.png" alt="Logo Orianne décoratrice" width="219" height="217">
         </div>
-
-        <div class="hero-visual">
-          <div class="hero-logo-card">
-            <div class="hero-video-wrapper">
-              <video autoplay muted loop playsinline poster="assets/images/slide-1.jpg">
-                <source src="assets/video/decoflorale.mp4" type="video/mp4">
-                Votre navigateur ne supporte pas la lecture vidéo.
-              </video>
-            </div>
-            <div class="hero-floating-logo">
-              <img src="assets/images/logo.png" alt="Emblème Orianne Décoratrice">
-            </div>
+        <div class="hero-original-center">
+          <h1>Création de décors événementiels personnalisés</h1>
+          <div class="hero-original-buttons">
+            <a href="#contact" class="btn-hero-contact">Contact</a>
+            <a href="/decoration-de-mariage" class="btn-hero-decouvrir">Découvrir</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Carrousel Panoramique -->
+    <!-- Jumbotron Vidéo -->
+    <section class="video-jumbotron" aria-label="Vidéo de présentation">
+      <div class="video-jumbotron-inner">
+        <div class="video-jumbotron-frame">
+          <video autoplay muted loop playsinline poster="/assets/images/slide-1.jpg">
+            <source src="/assets/video/decoflorale.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture vidéo.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- Jumbotron Diaporama Panoramique -->
     <section class="showcase-section" aria-label="Aperçu des mises en scène">
-      <div class="container">
-        <div class="carousel" data-carousel>
-          <div class="carousel-track">
-            <div class="carousel-slide is-active">
-              <img src="assets/images/slide-1.jpg" alt="Salle de réception de mariage illuminée avec centres de table floraux">
-              <div class="carousel-caption">
-                <h3>Scénographie &amp; Ambiance Lumineuse</h3>
-                <p>Sublimer le cachet de votre lieu de réception en Alsace et en Lorraine</p>
-              </div>
-            </div>
-            <div class="carousel-slide">
-              <img src="assets/images/slide-2.jpg" alt="Décoration florale de mariage et mise en scène de table">
-              <div class="carousel-caption">
-                <h3>Créations Florales Sur Mesure</h3>
-                <p>Des compositions uniques harmonisées à vos couleurs et à votre thème</p>
-              </div>
-            </div>
-            <div class="carousel-slide">
-              <img src="assets/images/slide-3.png" alt="Arche fleurie et décoration de cérémonie">
-              <div class="carousel-caption">
-                <h3>Cérémonies &amp; Réceptions d’Exception</h3>
-                <p>Accompagnement complet du bouquet de mariée jusqu’à l’installation en salle</p>
-              </div>
+      <div class="carousel" data-carousel>
+        <div class="carousel-track">
+          <div class="carousel-slide is-active">
+            <img src="/assets/images/slide-1.jpg" alt="Salle de réception de mariage illuminée avec centres de table floraux">
+            <div class="carousel-caption">
+              <h3>Scénographie &amp; Ambiance Lumineuse</h3>
+              <p>Sublimer le cachet de votre lieu de réception en Alsace et en Lorraine</p>
             </div>
           </div>
-
-          <button class="carousel-btn carousel-btn--prev" aria-label="Diapositive précédente">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
-          </button>
-          <button class="carousel-btn carousel-btn--next" aria-label="Diapositive suivante">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-          </button>
-
-          <div class="carousel-dots">
-            <button class="carousel-dot is-active" aria-label="Diapositive 1"></button>
-            <button class="carousel-dot" aria-label="Diapositive 2"></button>
-            <button class="carousel-dot" aria-label="Diapositive 3"></button>
+          <div class="carousel-slide">
+            <img src="/assets/images/slide-2.jpg" alt="Décoration florale de mariage et mise en scène de table">
+            <div class="carousel-caption">
+              <h3>Créations Florales Sur Mesure</h3>
+              <p>Des compositions uniques harmonisées à vos couleurs et à votre thème</p>
+            </div>
           </div>
+          <div class="carousel-slide">
+            <img src="/assets/images/slide-3.png" alt="Arche fleurie et décoration de cérémonie">
+            <div class="carousel-caption">
+              <h3>Cérémonies &amp; Réceptions d’Exception</h3>
+              <p>Accompagnement complet du bouquet de mariée jusqu’à l’installation en salle</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-btn carousel-btn--prev" aria-label="Diapositive précédente">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <button class="carousel-btn carousel-btn--next" aria-label="Diapositive suivante">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+
+        <div class="carousel-dots">
+          <button class="carousel-dot is-active" aria-label="Diapositive 1"></button>
+          <button class="carousel-dot" aria-label="Diapositive 2"></button>
+          <button class="carousel-dot" aria-label="Diapositive 3"></button>
         </div>
       </div>
     </section>
 
-    <!-- Section À propos / Savoir-faire -->
-    <section id="savoir-faire" class="about-section">
+    <!-- Section Présentation Orianne -->
+    <section class="about-section">
       <div class="container about-grid">
         <div class="about-image-stack">
           <div class="about-main-img">
-            <img src="assets/images/atelier-creation.jpg" alt="Création florale par Orianne décoratrice">
-          </div>
-          <div class="about-experience-badge">
-            <strong>+15 ans</strong>
-            <span>d'expérience</span>
+            <img src="/assets/images/atelier-creation.jpg" alt="Création florale par Orianne décoratrice">
           </div>
         </div>
 
         <div class="about-text">
-          <span class="eyebrow">Artisan Décorateur</span>
-          <h2 class="section-title">Un regard artistique au service de vos plus beaux moments</h2>
+          <h2 class="section-title">Orianne, artisan décorateur en Alsace et en Lorraine</h2>
           <p>
             Depuis plus de 15 ans, je mets mon savoir-faire et ma créativité dans la réalisation de décors pour de nombreuses occasions : mariages, réceptions, expositions, événementiel, décors vitrines, décors de Noël ou à thème.
           </p>
           <p>
             Également passionnée par le design et les dernières tendances déco, je vous conseille pour l'aménagement et la gamme colorée de votre décoration intérieure.
           </p>
-          <div class="about-highlight">
+          <p>
             À l’écoute de vos envies, je vous accompagne dans la réalisation de votre projet, en mettant mon expérience et ma sensibilité artistique à votre service.
+          </p>
+          <div class="about-highlight">
+            Orianne, décoratrice diplômée en Arts Appliqués et artisan décorateur depuis 2009, est spécialisée dans la décoration de mariages en Alsace et en Lorraine.<br><br>
+            J’imagine et mets en scène vos cérémonies et réceptions à Strasbourg, Nancy, Metz, Colmar et alentours : ambiance, couleurs, fleurs, tables et détails décoratifs pour un mariage élégant et personnalisé.
           </div>
-          <a href="#contact" class="btn btn-primary">Parler de votre projet</a>
+          <a href="#contact" class="btn btn-primary">Contact</a>
         </div>
       </div>
     </section>
@@ -216,8 +197,8 @@
 
         <div class="feature-split">
           <article class="feature-card">
-            <div class="feature-card-img" data-lightbox data-lightbox-src="assets/images/table-exotique-lorraine.jpg" data-lightbox-caption="Décors de table exotique en Lorraine">
-              <img src="assets/images/table-exotique-lorraine.jpg" alt="Décors de table exotique en Lorraine">
+            <div class="feature-card-img" data-lightbox data-lightbox-src="/assets/images/table-exotique-lorraine.jpg" data-lightbox-caption="Décors de table exotique en Lorraine">
+              <img src="/assets/images/table-exotique-lorraine.jpg" alt="Décors de table exotique en Lorraine">
             </div>
             <div class="feature-card-body">
               <h3>Créations florales sur mesure</h3>
@@ -231,8 +212,8 @@
           </article>
 
           <article class="feature-card">
-            <div class="feature-card-img" data-lightbox data-lightbox-src="assets/images/salle-tentures-guirlandes.jpg" data-lightbox-caption="Salle décorée avec des guirlandes au plafond">
-              <img src="assets/images/salle-tentures-guirlandes.jpg" alt="Salle décorée avec des guirlandes au plafond">
+            <div class="feature-card-img" data-lightbox data-lightbox-src="/assets/images/salle-tentures-guirlandes.jpg" data-lightbox-caption="Salle décorée avec des guirlandes au plafond">
+              <img src="/assets/images/salle-tentures-guirlandes.jpg" alt="Salle décorée avec des guirlandes au plafond">
             </div>
             <div class="feature-card-body">
               <h3>Installation des décors en Alsace et Lorraine</h3>
@@ -247,17 +228,17 @@
         </div>
 
         <div class="mini-gallery-strip">
-          <div class="mini-gallery-item" data-lightbox data-lightbox-src="assets/images/galerie-1.jpg" data-lightbox-caption="Mise en scène de réception">
-            <img src="assets/images/galerie-1.jpg" alt="Mise en scène de réception" loading="lazy">
+          <div class="mini-gallery-item" data-lightbox data-lightbox-src="/assets/images/galerie-1.jpg" data-lightbox-caption="Mise en scène de réception">
+            <img src="/assets/images/galerie-1.jpg" alt="Mise en scène de réception" loading="lazy">
           </div>
-          <div class="mini-gallery-item" data-lightbox data-lightbox-src="assets/images/galerie-2.jpg" data-lightbox-caption="Décoration florale de mariage">
-            <img src="assets/images/galerie-2.jpg" alt="Décoration florale de mariage" loading="lazy">
+          <div class="mini-gallery-item" data-lightbox data-lightbox-src="/assets/images/galerie-2.jpg" data-lightbox-caption="Décoration florale de mariage">
+            <img src="/assets/images/galerie-2.jpg" alt="Décoration florale de mariage" loading="lazy">
           </div>
-          <div class="mini-gallery-item" data-lightbox data-lightbox-src="assets/images/galerie-3.jpg" data-lightbox-caption="Détail floral et décoration">
-            <img src="assets/images/galerie-3.jpg" alt="Détail floral et décoration" loading="lazy">
+          <div class="mini-gallery-item" data-lightbox data-lightbox-src="/assets/images/galerie-3.jpg" data-lightbox-caption="Détail floral et décoration">
+            <img src="/assets/images/galerie-3.jpg" alt="Détail floral et décoration" loading="lazy">
           </div>
-          <div class="mini-gallery-item" data-lightbox data-lightbox-src="assets/images/galerie-4.jpg" data-lightbox-caption="Ambiance de table élégante">
-            <img src="assets/images/galerie-4.jpg" alt="Ambiance de table élégante" loading="lazy">
+          <div class="mini-gallery-item" data-lightbox data-lightbox-src="/assets/images/galerie-4.jpg" data-lightbox-caption="Ambiance de table élégante">
+            <img src="/assets/images/galerie-4.jpg" alt="Ambiance de table élégante" loading="lazy">
           </div>
         </div>
       </div>
@@ -275,33 +256,33 @@
         </div>
 
         <div class="portfolio-grid">
-          <div class="portfolio-card" data-lightbox data-lightbox-src="assets/images/composition-florale.jpg" data-lightbox-caption="Composition florale sur mesure">
-            <img src="assets/images/composition-florale.jpg" alt="Composition florale sur mesure" loading="lazy">
+          <div class="portfolio-card" data-lightbox data-lightbox-src="/assets/images/composition-florale.jpg" data-lightbox-caption="Composition florale sur mesure">
+            <img src="/assets/images/composition-florale.jpg" alt="Composition florale sur mesure" loading="lazy">
             <div class="portfolio-overlay"><span>Composition florale sur mesure</span></div>
           </div>
 
-          <div class="portfolio-card" data-lightbox data-lightbox-src="assets/images/creation-florale-1.png" data-lightbox-caption="Centre de table et art floral">
-            <img src="assets/images/creation-florale-1.png" alt="Centre de table et art floral" loading="lazy">
-            <div class="portfolio-overlay"><span>Centre de table &amp; art floral</span></div>
+          <div class="portfolio-card" data-lightbox data-lightbox-src="/assets/images/creation-florale-1.png" data-lightbox-caption="Bouquet de mariée et art floral">
+            <img src="/assets/images/creation-florale-1.png" alt="Bouquet de mariée et art floral" loading="lazy">
+            <div class="portfolio-overlay"><span>Bouquet de mariée &amp; art floral</span></div>
           </div>
 
-          <div class="portfolio-card" data-lightbox data-lightbox-src="assets/images/arche-ceremonie-alsace.jpg" data-lightbox-caption="Arche de cérémonie laïque extérieur en Alsace">
-            <img src="assets/images/arche-ceremonie-alsace.jpg" alt="Arche de cérémonie laïque extérieur en Alsace" loading="lazy">
+          <div class="portfolio-card" data-lightbox data-lightbox-src="/assets/images/arche-ceremonie-alsace.jpg" data-lightbox-caption="Arche de cérémonie laïque extérieur en Alsace">
+            <img src="/assets/images/arche-ceremonie-alsace.jpg" alt="Arche de cérémonie laïque extérieur en Alsace" loading="lazy">
             <div class="portfolio-overlay"><span>Arche de cérémonie laïque en Alsace</span></div>
           </div>
 
-          <div class="portfolio-card" data-lightbox data-lightbox-src="assets/images/deco-boheme-alsace.jpg" data-lightbox-caption="Décoration bohème en Alsace">
-            <img src="assets/images/deco-boheme-alsace.jpg" alt="Décoration bohème en Alsace" loading="lazy">
+          <div class="portfolio-card" data-lightbox data-lightbox-src="/assets/images/deco-boheme-alsace.jpg" data-lightbox-caption="Décoration bohème en Alsace">
+            <img src="/assets/images/deco-boheme-alsace.jpg" alt="Décoration bohème en Alsace" loading="lazy">
             <div class="portfolio-overlay"><span>Décoration bohème en Alsace</span></div>
           </div>
 
-          <div class="portfolio-card" data-lightbox data-lightbox-src="assets/images/centre-de-table-floral.jpeg" data-lightbox-caption="Décor floral et bougies">
-            <img src="assets/images/centre-de-table-floral.jpeg" alt="Décor floral et bougies" loading="lazy">
+          <div class="portfolio-card" data-lightbox data-lightbox-src="/assets/images/centre-de-table-floral.jpeg" data-lightbox-caption="Décor floral et bougies">
+            <img src="/assets/images/centre-de-table-floral.jpeg" alt="Décor floral et bougies" loading="lazy">
             <div class="portfolio-overlay"><span>Décor floral &amp; mise en lumière</span></div>
           </div>
 
-          <div class="portfolio-card" data-lightbox data-lightbox-src="assets/images/deco-boheme-lorraine.jpg" data-lightbox-caption="Décoration bohème en Lorraine">
-            <img src="assets/images/deco-boheme-lorraine.jpg" alt="Décoration bohème en Lorraine" loading="lazy">
+          <div class="portfolio-card" data-lightbox data-lightbox-src="/assets/images/deco-boheme-lorraine.jpg" data-lightbox-caption="Décoration bohème en Lorraine">
+            <img src="/assets/images/deco-boheme-lorraine.jpg" alt="Décoration bohème en Lorraine" loading="lazy">
             <div class="portfolio-overlay"><span>Décoration bohème en Lorraine</span></div>
           </div>
         </div>
@@ -377,6 +358,13 @@
               <textarea id="message" name="message" class="form-control" placeholder="Décrivez votre projet ici (date de l'événement, lieu de réception, envies...)" required></textarea>
             </div>
 
+            <div class="form-group" style="font-size: 0.84rem; line-height: 1.45; color: var(--color-text-muted); margin-bottom: 18px;">
+              <label style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer;">
+                <input type="checkbox" required style="margin-top: 3px; accent-color: var(--color-terracotta); flex-shrink: 0;">
+                <span>En soumettant ce formulaire, j'accepte que mes informations soient utilisées uniquement par Orianne Décoratrice pour répondre à ma demande, conformément aux <a href="/mentions-legales" style="color: var(--color-terracotta-dark); text-decoration: underline;">Mentions légales &amp; Politique de confidentialité (RGPD)</a>.*</span>
+              </label>
+            </div>
+
             <button type="submit" class="btn btn-primary" style="width: 100%;">Envoyer votre demande</button>
             <div id="form-status" class="form-status" role="status"></div>
           </form>
@@ -390,7 +378,7 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-brand">
-          <img src="assets/images/logo.png" alt="Logo Orianne Décoratrice">
+          <img src="/assets/images/logo.png" alt="Logo Orianne Décoratrice">
           <div>
             <strong style="color: #fff; font-family: var(--font-display); font-size: 1.3rem;">Orianne Décoratrice</strong>
             <p style="font-size: 0.9rem;">Décoration de mariages &amp; créations florales — Alsace &amp; Lorraine</p>
@@ -401,12 +389,13 @@
           <a href="/">Accueil</a>
           <a href="/decoration-de-mariage">Mariages</a>
           <a href="#contact">Contact</a>
+          <a href="/mentions-legales">Mentions légales &amp; RGPD</a>
           <a href="https://www.instagram.com/oriannedecoratrice/?hl=fr" target="_blank" rel="noopener noreferrer">Instagram</a>
         </nav>
       </div>
 
       <div class="footer-bottom">
-        <p>© 2026 Orianne Décoratrice. Tous droits réservés.</p>
+        <p>© 2026 Orianne Décoratrice — Orianne Jaming (EI) • SIREN 518 114 376 • <a href="/mentions-legales" style="text-decoration: underline;">Mentions légales &amp; Confidentialité</a></p>
         <p>Strasbourg • Nancy • Metz • Colmar • Alsace &amp; Lorraine</p>
       </div>
     </div>
@@ -419,6 +408,6 @@
     <div id="lightbox-caption" class="lightbox-caption"></div>
   </div>
 
-  <script src="assets/js/main.js"></script>
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>

@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const payload = Object.fromEntries(formData.entries());
 
       try {
-        const response = await fetch('https://formsubmit.co/ajax/oriannedecoratrice@gmail.com', {
+        const response = await fetch('https://formsubmit.co/ajax/40c338a4a052e67991d2179ee7427039', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

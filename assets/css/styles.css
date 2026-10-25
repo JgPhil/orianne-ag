@@ -99,8 +99,13 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 88px;
+  min-height: 76px;
   gap: 24px;
+}
+
+.header-inner--nav-only {
+  justify-content: flex-end;
+  min-height: 54px;
 }
 
 .brand-logo {

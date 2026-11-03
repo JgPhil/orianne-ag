@@ -1,10 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // 0. Redirection automatique de www.oriannedecoratrice.com vers oriannedecoratrice.com
-  if (window.location.hostname === 'www.oriannedecoratrice.com') {
-    window.location.replace('https://oriannedecoratrice.com' + window.location.pathname + window.location.search + window.location.hash);
-    return;
-  }
-
   // 1. Sticky Header shadow on scroll
   const header = document.querySelector('.site-header');
   if (header) {

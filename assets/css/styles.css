@@ -913,6 +913,74 @@ ul {
 }
 
 /* ==========================================================================
+   TESTIMONIALS / AVIS DES MARIES SECTION
+   ========================================================================== */
+.testimonials-section {
+  padding: 88px 0;
+  background: linear-gradient(180deg, var(--color-ivory) 0%, var(--color-cream) 100%);
+  border-top: 1px solid var(--color-border);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.testimonial-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 32px 28px;
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.testimonial-stars {
+  color: var(--color-gold);
+  font-size: 1.05rem;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.testimonial-quote {
+  font-size: 0.98rem;
+  color: var(--color-text-muted);
+  line-height: 1.68;
+  font-style: italic;
+  margin: 0;
+}
+
+.testimonial-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  border-top: 1px solid rgba(194, 134, 104, 0.15);
+}
+
+.testimonial-author {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.testimonial-source {
+  font-size: 0.82rem;
+  color: var(--color-terracotta-dark);
+  font-weight: 500;
+}
+
+.testimonials-cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* ==========================================================================
    FAQ SECTION (SEO LOCAL & QUESTIONS FREQUENTES)
    ========================================================================== */
 .faq-section {
@@ -1238,7 +1306,8 @@ textarea.form-control {
   }
 
   .highlight-pair,
-  .faq-grid {
+  .faq-grid,
+  .testimonials-grid {
     grid-template-columns: 1fr;
   }
 

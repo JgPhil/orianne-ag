@@ -7,5 +7,6 @@
 .gitignore
 .assetsignore
 wrangler.jsonc
+worker.js
 README.md
 .DS_Store

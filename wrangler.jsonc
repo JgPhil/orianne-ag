@@ -6,9 +6,12 @@
   "observability": {
     "enabled": true
   },
+  "main": "worker.js",
   "assets": {
     "directory": ".",
-    "html_handling": "drop-trailing-slash"
+    "binding": "ASSETS",
+    "html_handling": "drop-trailing-slash",
+    "run_worker_first": true
   },
   "routes": [
     {

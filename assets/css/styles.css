@@ -119,6 +119,8 @@ ul {
   height: 68px;
   object-fit: contain;
   transition: transform var(--transition);
+  font-size: 0;
+  color: transparent;
 }
 
 .brand-logo:hover img {
@@ -316,6 +318,28 @@ ul {
   line-height: 1.3;
   color: rgb(194, 134, 104);
   margin: 0;
+}
+
+.hero-h1-sub {
+  display: block;
+  font-family: var(--font-body);
+  font-size: clamp(0.95rem, 1.35vw, 1.12rem);
+  font-weight: 400;
+  color: var(--color-text-muted);
+  margin-top: 8px;
+  letter-spacing: 0.02em;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .hero-original-buttons {
@@ -820,6 +844,14 @@ ul {
   color: var(--color-text-muted);
 }
 
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
+  margin-top: 32px;
+}
+
 .page-hero-img {
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -878,6 +910,47 @@ ul {
   font-weight: 600;
   font-size: 0.92rem;
   color: var(--color-text);
+}
+
+/* ==========================================================================
+   FAQ SECTION (SEO LOCAL & QUESTIONS FREQUENTES)
+   ========================================================================== */
+.faq-section {
+  padding: 72px 0 88px;
+  background: var(--color-cream);
+  border-top: 1px solid var(--color-border);
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 28px 30px;
+  box-shadow: var(--shadow-soft);
+}
+
+.faq-item h3 {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-terracotta-dark);
+  margin-bottom: 10px;
+  line-height: 1.25;
+}
+
+.faq-item p {
+  font-size: 0.97rem;
+  color: var(--color-text-muted);
+  line-height: 1.65;
+  margin: 0;
 }
 
 /* ==========================================================================
@@ -1164,7 +1237,8 @@ textarea.form-control {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .highlight-pair {
+  .highlight-pair,
+  .faq-grid {
     grid-template-columns: 1fr;
   }
 
